@@ -1,0 +1,47 @@
+＜イメージに関するコマンド＞
+docker search [OPTIONS] 
+#イメージ名//キーワードからオンライン上のDockerイメージを探す
+docker pull [OPTIONS] 
+#イメージ名:[TAG]//イメージをダウンロードする
+docker images [OPTIONS]
+#// ダウンロードしたDockerイメージを一覧表示する
+docker inspect [OPTIONS] 
+#イメージID//イメージを確認する
+docker rmi [OPTIONS] 
+#イメージID//イメージを削除する
+docker history [OPTIONS] 
+#イメージID//ヒストリーを確認する
+
+＜コンテナに関するコマンド＞
+
+docker run [OPTIONS] 
+#イメージ名[:TAG] [ARG]//コンテナを起動する
+docker run [OPTIONS] 
+#イメージ名[:TAG] [ARG]//リソースを指定する
+docker ps [OPTIONS]
+#// 稼働コンテナを一覧表示
+docker stop [OPTIONS] 
+#コンテナID//コンテナを停止する
+docker kill [OPTIONS] 
+#コンテナID //コンテナを終了する
+docker rm [OPTIONS] 
+#コンテナID//コンテナを削除する
+docker restart [OPTIONS] 
+#コンテナID//コンテナを再起動する
+
+＜その他＞
+docker info
+#//システム情報を表示する
+docker help
+#//ヘルプを表示する
+
+＜オプション＞
+-d #:バックグラウンドで実行
+–name #コンテナ名：コンテナに名前をつける
+-v #：ホストとコンテナ間でディレクトリやファイルを共有する
+–rm #: コンテナ終了時にコンテナを削除するため、コマンドを試したい時にオススメ
+-a #:停止中のコンテナまで含めて表示する
+–filter “status=exited” #：停止中のコンテナのみ表示するオプション。
+-i #: コンテナの標準入力を開くことができ、コマンドが打てる
+-t #: ttyを利用する
+#上記2つを合わせて、-itとすることが多い
