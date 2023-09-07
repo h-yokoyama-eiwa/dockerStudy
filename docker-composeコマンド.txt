@@ -1,0 +1,28 @@
+docker-compose build
+#サービスのビルドを実行
+docker-compose up
+#コンテナを作成して、起動（-dオプションでバックグラウンド実行）
+docker-compose down
+#docker-compose.ymlに書かれているサービスを参考にコンテナを停止し、そのコンテナとネットワークを削除する
+docker-compose exec
+#docker execコマンドと同等
+docker-compose kill
+#コンテナを強制停止する
+docker-compose logs
+#サービスのログを出力
+docker-compose pause
+#サービスを一旦停止する(一時停止したサービスは強制削除、強制開始ができずunpauseをしてからでないと作業ができなくなる)
+docker-compose unpause
+#サービスの再開（pauseしている状態から復帰）
+docker-compose ps
+#コンテナの一覧を表示
+docker-compose rm
+#停止中のコンテナを削除
+docker-compose run
+#引数で指定したサービスのコンテナ内でコマンドを実行
+docker-compose start
+#サービスを開始する（既にコンテナがある状態である必要あり）
+docker-compose stop
+#サービスを停止する
+docker-compose version
+#docker-composeのバージョンを表示
