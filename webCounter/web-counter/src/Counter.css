@@ -1,0 +1,19 @@
+.Counter {
+  text-align: center;
+  background-color: yellow;
+  width: 600px;
+  height: 300px;
+  min-width: 300px;
+  min-height: 150px;
+  border: outset;
+}
+
+.Display {
+  text-align: center;
+  background-color: white;
+  width: 80%;
+  height: 50px;
+  margin: 10% auto;
+  line-height: 50px;
+  border: inset;
+}
