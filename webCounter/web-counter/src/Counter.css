@@ -17,3 +17,17 @@
   line-height: 50px;
   border: inset;
 }
+
+.Button {
+  color: #fff;
+  background-color: #ffa500;
+  border-bottom: 5px solid #ff8c00;
+  border-radius: 100vh;
+}
+
+#button_count:active {
+  margin-top: 3px;
+  color: #fff;
+  background: #ffa500;
+  border-bottom: 2px solid #ff8c00;
+}
