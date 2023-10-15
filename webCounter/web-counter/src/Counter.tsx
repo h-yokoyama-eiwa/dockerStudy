@@ -6,9 +6,9 @@ function Counter() {
     <div className='Counter'>
       <p className='Display'>0</p>
       <div className='ButtonArea'>
-        <button className='Button' id='button_count'>カウント</button>
-        <button className='Button' id='button_reset'>リセット</button>
-        <button className='Button' id='button_save'>保存</button>
+        <button className='CountButton'>カウント</button>
+        <button className='ResetButton'>リセット</button>
+        <button className='SaveButton'>保存</button>
       </div>
     </div>
   );

@@ -18,16 +18,44 @@
   border: inset;
 }
 
-.Button {
+.CountButton {
   color: #fff;
   background-color: #ffa500;
-  border-bottom: 5px solid #ff8c00;
+  border: 3px solid #ffa500;
   border-radius: 100vh;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-#button_count:active {
-  margin-top: 3px;
-  color: #fff;
+.CountButton:active {
   background: #ffa500;
-  border-bottom: 2px solid #ff8c00;
+  border-top: none;
+}
+
+.ResetButton {
+  color: #fff;
+  background-color: #ffa500;
+  border: 3px solid #ffa500;
+  border-radius: 100vh;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.ResetButton:active {
+  background: #ffa500;
+  border-top: none;
+}
+
+.SaveButton {
+  color: #fff;
+  background-color: #ffa500;
+  border: 3px solid #ffa500;
+  border-radius: 100vh;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.SaveButton:active {
+  background: #ffa500;
+  border-top: none;
 }
