@@ -1,0 +1,61 @@
+.Counter {
+  text-align: center;
+  background-color: yellow;
+  width: 600px;
+  height: 300px;
+  min-width: 300px;
+  min-height: 150px;
+  border: outset;
+}
+
+.Display {
+  text-align: center;
+  background-color: white;
+  width: 80%;
+  height: 50px;
+  margin: 10% auto;
+  line-height: 50px;
+  border: inset;
+}
+
+.CountButton {
+  color: #fff;
+  background-color: #ffa500;
+  border: 3px solid #ffa500;
+  border-radius: 100vh;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.CountButton:active {
+  background: #ffa500;
+  border-top: none;
+}
+
+.ResetButton {
+  color: #fff;
+  background-color: #ffa500;
+  border: 3px solid #ffa500;
+  border-radius: 100vh;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.ResetButton:active {
+  background: #ffa500;
+  border-top: none;
+}
+
+.SaveButton {
+  color: #fff;
+  background-color: #ffa500;
+  border: 3px solid #ffa500;
+  border-radius: 100vh;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.SaveButton:active {
+  background: #ffa500;
+  border-top: none;
+}
