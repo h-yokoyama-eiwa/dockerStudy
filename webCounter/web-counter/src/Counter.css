@@ -1,11 +1,5 @@
-.Counter {
-  text-align: center;
+.counter {
   background-color: yellow;
-  width: 600px;
-  height: 300px;
-  min-width: 300px;
-  min-height: 150px;
-  border: outset;
 }
 
 .Display {
