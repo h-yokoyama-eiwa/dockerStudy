@@ -26,3 +26,5 @@ docker-compose stop
 #サービスを停止する
 docker-compose version
 #docker-composeのバージョンを表示
+docker-compose restart
+#dockerコンテナの再起動
