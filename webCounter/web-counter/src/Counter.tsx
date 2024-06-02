@@ -9,6 +9,8 @@ import { StyledCard } from "./styledCard";
 import { StyledTextField } from './styledTextField';
 
 function Counter() {
+  const [count, setCount] = React.useState(0);
+
   return (
     <Grid container justifyContent={'center'}>
       <Grid item xs={6}>
@@ -22,7 +24,7 @@ function Counter() {
                     className='text-field'
                     variant="outlined"
                     fullWidth
-                    defaultValue={0}
+                    defaultValue={count}
                     type='number'
                     inputProps={{
                       style: { textAlign: "center"}
@@ -34,7 +36,12 @@ function Counter() {
             <Spacer size={100} />
             <Grid container justifyContent={'space-around'} alignItems={'end'}>
               <Grid item>
-                <Button variant="contained">カウント</Button>
+                <Button
+                  variant="contained"
+                  onClick={() => setCount(count + 1)}
+                >
+                    カウント
+                </Button>
               </Grid>
               <Grid item>
                 <Button variant="contained">リセット</Button>
