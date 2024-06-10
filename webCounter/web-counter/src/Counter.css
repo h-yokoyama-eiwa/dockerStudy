@@ -2,16 +2,6 @@
   background-color: yellow;
 }
 
-.Display {
-  text-align: center;
-  background-color: white;
-  width: 80%;
-  height: 50px;
-  margin: 10% auto;
-  line-height: 50px;
-  border: inset;
-}
-
 .CountButton {
   color: #fff;
   background-color: #ffa500;
