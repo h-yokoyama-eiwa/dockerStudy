@@ -1,51 +1,74 @@
-import React from 'react';
-import './Counter.css';
-import Card from '@mui/material/Card';
-import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid';
-import { Spacer } from './Spacer';
-import Display from './Display';
+import React from "react";
+import "./Counter.css";
+import Card from "@mui/material/Card";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
+import { Spacer } from "./Spacer";
+import Display from "./Display";
 
 function Counter() {
   const [count, setCount] = React.useState(0);
 
   return (
-    <Grid container justifyContent={'center'}>
+    <Grid container justifyContent={"center"}>
       <Grid item xs={6}>
         <Card
-          className='card'
+          className="card"
           sx={{
-            minWidth: 600,
-            maxWidth: 600,
-            height: 300,
-            backgroundColor: '#ffff00'
+            minWidth: "200px",
+            maxWidth: "600px",
+            width: "100%",
+            height: "300px",
+            backgroundColor: "#ffff00",
           }}
         >
-          <Spacer size={30} />
-          <Grid container justifyContent={'center'}>
+          <Spacer width="100%" height="10%" />
+          <Grid container justifyContent={"center"}>
             <Grid item xs={10}>
-              <Display count={0} width='100%' height='50px'/>
+              <Display count={0} width="100%" height="50px" />
             </Grid>
           </Grid>
-          <Spacer size={100} />
-          <Grid container justifyContent={'space-around'} alignItems={'end'}>
-            <Grid item>
+          <Spacer width="100%" height="30%" />
+          <Grid
+            container
+            justifyContent={"center"}
+            alignItems={"end"}
+            columnSpacing={{ xs: 7 }}
+          >
+            <Grid item xs="auto">
               <Button
                 variant="contained"
                 onClick={() => setCount(count + 1)}
+                sx={{
+                  width: "100%",
+                }}
               >
-                  カウント
+                カウント
               </Button>
             </Grid>
-            <Grid item>
-              <Button variant="contained">リセット</Button>
+            <Grid item xs="auto">
+              <Button
+                variant="contained"
+                sx={{
+                  width: "100%",
+                }}
+              >
+                リセット
+              </Button>
             </Grid>
-            <Grid item>
-              <Button variant="contained">保存</Button>
+            <Grid item xs="auto">
+              <Button
+                variant="contained"
+                sx={{
+                  width: "100%",
+                }}
+              >
+                保存
+              </Button>
             </Grid>
           </Grid>
         </Card>
-    </Grid>
+      </Grid>
     </Grid>
   );
 }

@@ -1,19 +1,19 @@
-
 import React, { FC } from 'react'
 
 type SpacerProps = {
-  size: number;
-  horizontal?: boolean;
+  width: string;
+  height: string;
 }
 
-export const Spacer: FC<SpacerProps> = ({ size, horizontal }) => {
+export const Spacer: FC<SpacerProps> = ({ width, height }) => {
   return (
     <div
-      style={
-        horizontal
-          ? { width: size, height: 'auto', display: 'inline-block', flexShrink: 0 }
-          : { width: 'auto', height: size, flexShrink: 0  }
-      }
+      style={{
+        width: width,
+        height: height,
+        display: 'inline-block',
+        flexShrink: 0
+      }}
     />
   )
 }
