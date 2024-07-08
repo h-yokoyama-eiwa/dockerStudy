@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import "./Counter.css";
 import Card from "@mui/material/Card";
 import Button from "@mui/material/Button";
@@ -7,7 +7,7 @@ import { Spacer } from "./Spacer";
 import Display from "./Display";
 
 function Counter() {
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = useState(0);
 
   return (
     <Grid container justifyContent={"center"}>
@@ -25,7 +25,7 @@ function Counter() {
           <Spacer width="100%" height="10%" />
           <Grid container justifyContent={"center"}>
             <Grid item xs={10}>
-              <Display count={0} width="100%" height="50px" />
+              <Display count={count} width="100%" height="50px" />
             </Grid>
           </Grid>
           <Spacer width="100%" height="30%" />
