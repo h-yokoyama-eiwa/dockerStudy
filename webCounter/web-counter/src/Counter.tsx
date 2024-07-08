@@ -49,6 +49,7 @@ function Counter() {
             <Grid item xs="auto">
               <Button
                 variant="contained"
+                onClick={() => setCount(0)}
                 sx={{
                   width: "100%",
                 }}
