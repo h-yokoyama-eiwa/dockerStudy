@@ -22,17 +22,18 @@ function Counter() {
             backgroundColor: "#ffff00",
           }}
         >
-          <Spacer width="100%" height="10%" />
+          <Spacer width="100%" height="15%" />
           <Grid container justifyContent={"center"}>
             <Grid item xs={10}>
               <Display count={count} width="100%" height="50px" />
             </Grid>
           </Grid>
-          <Spacer width="100%" height="30%" />
+          <Spacer width="100%" height="20%" />
           <Grid
             container
             justifyContent={"center"}
             alignItems={"end"}
+            rowSpacing={1}
             columnSpacing={{ xs: 7 }}
           >
             <Grid item xs="auto">
@@ -49,6 +50,7 @@ function Counter() {
             <Grid item xs="auto">
               <Button
                 variant="contained"
+                onClick={() => setCount(0)}
                 sx={{
                   width: "100%",
                 }}
